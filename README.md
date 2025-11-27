@@ -1,107 +1,99 @@
-📘 Placement Helper – IIITA DSA Hub
+# Placement Helper – IIITA DSA Hub
 
-A company-wise placement preparation platform that curates important DSA questions for product-based companies and provides clean, well-formatted C++ solutions with direct practice links.
+Placement Helper is a company-wise DSA interview preparation platform designed to help students prepare for product-based companies through structured and curated questions.
 
-This project is designed to act as a structured roadmap for interview preparation and quick revision, especially for students targeting companies like Microsoft, Amazon, Oracle, and similar recruiters.
+It provides rewritten problem summaries, clear constraints, and well-formatted C++ solutions along with direct links to the original problems for hands-on practice.
 
-🔗 Live Repository
+---
 
-GitHub Repository:
-👉 https://github.com/Guesskinghmm/placement-helper
+## Project Links
 
-Live Website (via GitHub Pages):
-👉 https://guesskinghmm.github.io/placement-helper/
+GitHub Repository  
+https://github.com/Guesskinghmm/placement-helper  
 
-🎯 Objective
+Live Website  
+https://guesskinghmm.github.io/placement-helper/
 
-To provide a focused, distraction-free platform where students can:
+---
 
-Quickly view important DSA questions company-wise
+## Purpose
 
-Understand the problem through clear summaries
+This project simplifies placement preparation by offering:
+- A focused roadmap of important DSA questions  
+- Company-specific problem categorization  
+- Clean explanations and optimized C++ solutions  
+- Direct access to practice platforms  
 
-Study optimized C++ reference solutions
+It is built for students targeting Microsoft, Amazon, Oracle, and other product-based companies.
 
-Directly practice on the original platform
+---
 
-🚀 Features
+## Key Features
 
-Company-wise DSA question segregation
+- Company-wise segregation of DSA interview questions  
+- Handpicked and placement-relevant problems  
+- Rewritten problem descriptions (no direct copy-paste)  
+- Clearly defined constraints  
+- Properly formatted C++ reference solutions  
+- Direct links to LeetCode / Codeforces  
+- AI Help button for instant guidance  
+- Clean UI with resizable sidebar  
+- Open-source and contributor-friendly
 
-Handpicked frequently asked interview problems
+---
 
-Rewritten problem summaries (no copy-paste from platforms)
+## Project Structure
 
-Clear constraints for each problem
+placement-helper  
+├── dashboard.html   – Main interface  
+├── main.css         – Styling and layout  
+├── app.js           – Question logic and database  
+└── README.md        – Project documentation  
 
-Properly formatted C++ solutions
+---
 
-Direct links to LeetCode / Codeforces for practice
+## Technologies Used
 
-AI Help button that opens ChatGPT with the question context
+- HTML5  
+- CSS3  
+- Vanilla JavaScript  
+- C++ (for solution references)
 
-Clean and professional UI with resizable sidebar
+No external frameworks or libraries are used. The project runs directly in any modern browser.
 
-Open for community contributions
+---
 
-🗂 Project Structure
-placement-helper/
-├── dashboard.html   → Main interface
-├── main.css         → Styling and layout
-├── app.js           → Question database & logic
-└── README.md        → Project documentation
+## How to Use
 
-🛠 Tech Stack
+1. Open the live website.
+2. Select a company from the left panel.
+3. Choose a question to view:
+   - Problem summary  
+   - Constraints  
+   - Practice link  
+   - C++ solution  
+4. Use:
+   - "Show Solution" to reveal code  
+   - "Get AI Help" for guided assistance  
 
-HTML5
+---
 
-CSS3
+## Adding New Questions
 
-Vanilla JavaScript
+All questions are stored inside app.js.
 
-C++ (for solution references)
-
-No frameworks or build tools used. The project runs directly in the browser.
-
-▶️ How to Use
-
-Open the live website.
-
-Select a company from the left panel.
-
-Click on any question to view:
-
-Problem summary
-
-Constraints
-
-Practice link
-
-C++ solution
-
-Use:
-
-Show Solution button to reveal code
-
-Get AI Help to open ChatGPT with the question context
-
-✏️ How to Add New Questions
-
-All data is stored inside app.js.
-
-To add a question, follow this structure:
+To add a new question, follow this format:
 
 {
   title: "Question Title",
-  description: "Brief problem explanation in your own words.",
+  description: "Brief explanation in your own words.",
   constraints: [
     "Constraint 1",
     "Constraint 2"
   ],
   source: "https://leetcode.com/...",
-  solution: `// C++ solution code here`
+  solution: `Well-formatted C++ solution`
 }
-
 
 To add a new company:
 
@@ -110,57 +102,58 @@ NewCompany: [
   { question object }
 ]
 
+Save the file and refresh the page.
 
-Save the file and refresh the browser to see changes.
+---
 
-🤝 Contribution
+## Contribution
 
-This project is open for everyone.
+This project is open for contributions.
 
-You can contribute by:
-
-Adding new companies
-
-Adding more important DSA questions
-
-Improving solution quality
-
-Refining UI/UX
-
-Enhancing explanations
+You can help by:
+- Adding more companies  
+- Including new important questions  
+- Improving UI/UX  
+- Enhancing explanations and solutions  
 
 Fork the repository and submit a pull request.
 
-📌 Ideal For
+---
 
-Placement Preparation
+## Ideal For
 
-DSA Practice
+- Placement Preparation  
+- DSA Revision  
+- Internship Portfolios  
+- Competitive Programming Practice  
+- Open Source Contribution
 
-Resume Portfolio Project
+---
 
-Microsoft / Product Company Internship Applicants
+## Future Enhancements
 
-📈 Future Improvements
+- Difficulty filters  
+- Search functionality  
+- Progress tracking  
+- Tag-based categorization  
+- Solved status system
 
-Difficulty-based filtering
+---
 
-Search functionality
+## Disclaimer
 
-Mark as solved tracking
+Problem explanations are rewritten for educational purposes.  
+Original problems remain the property of their respective platforms such as LeetCode and Codeforces.  
+This project only provides references and direct links for legitimate practice.
 
-Topic-wise categorization
+---
 
-Progress analytics
+## Author
 
-⚖️ Disclaimer
+Aditya Tripathi  
+IIIT Allahabad  
+GitHub: https://github.com/Guesskinghmm  
 
-All problem statements are rewritten for educational purposes.
-Original problems are owned by their respective platforms such as LeetCode and Codeforces.
-This project only provides references and links to those platforms for practice.
+---
 
-👨‍💻 Author
-
-Aditya Tripathi
-IIIT Allahabad
-GitHub: https://github.com/Guesskinghmm
+If you find this project useful, consider starring the repository.
