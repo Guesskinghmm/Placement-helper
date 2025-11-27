@@ -6,13 +6,10 @@ It provides rewritten problem summaries, clear constraints, and well-formatted C
 
 ---
 
-## Project Links
+## Project Repository
 
-GitHub Repository  
-https://github.com/Guesskinghmm/placement-helper  
-
-Live Website  
-https://guesskinghmm.github.io/placement-helper/
+GitHub Link  
+https://github.com/Guesskinghmm/placement-helper
 
 ---
 
@@ -65,22 +62,23 @@ No external frameworks or libraries are used. The project runs directly in any m
 
 ## How to Use
 
-1. Open the live website.
-2. Select a company from the left panel.
-3. Choose a question to view:
+1. Download or clone the repository.
+2. Open `dashboard.html` in any web browser.
+3. Select a company from the left panel.
+4. Choose a question to view:
    - Problem summary  
    - Constraints  
    - Practice link  
    - C++ solution  
-4. Use:
+5. Use:
    - "Show Solution" to reveal code  
-   - "Get AI Help" for guided assistance  
+   - "Get AI Help" for guided assistance
 
 ---
 
 ## Adding New Questions
 
-All questions are stored inside app.js.
+All questions are stored inside `app.js`.
 
 To add a new question, follow this format:
 
