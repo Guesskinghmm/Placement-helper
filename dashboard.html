@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Placement Helper</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<header class="topbar">PLACEMENT HELPER – IIITA DSA HUB</header>
+
+<div class="container">
+
+  <aside class="left-panel" id="leftPanel">
+    <h3>Companies</h3>
+    <ul id="companyList"></ul>
+
+    <h3>Questions</h3>
+    <ul id="questionList"></ul>
+  </aside>
+
+  <div class="resizer" id="dragBar"></div>
+
+  <main class="editor-panel">
+
+    <div class="question-card">
+      <h2 id="questionTitle">Select a Question</h2>
+
+      <p id="questionDescription"></p>
+
+      <h4>Constraints</h4>
+      <ul id="constraintBox"></ul>
+
+      <a id="sourceLink" target="_blank" class="solveBtn">
+        Practice on Original Platform
+      </a>
+
+      <div class="actions">
+        <button id="aiBtn" class="aiBtn">Get AI Help</button>
+        <button id="solutionToggle" class="aiBtn">Show Solution</button>
+      </div>
+    </div>
+
+    <pre id="solutionBox" class="solution hidden"></pre>
+
+  </main>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
