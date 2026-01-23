@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Placement Helper</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div id="loginBox" class="login-box">
+  <h2>Placement Helper</h2>
+  <form onsubmit="login(event)">
+    <input id="usernameInput" placeholder="Your name" autofocus>
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+<div id="app" class="hidden">
+
+<header class="topbar">
+  PLACEMENT HELPER – IIITA DSA HUB
+  <button class="logoutBtn" onclick="logout()">Logout</button>
+</header>
+
+<div class="container">
+
+  <aside class="left-panel">
+    <h3>Companies</h3>
+    <ul id="companyList"></ul>
+
+    <h3>Questions</h3>
+    <ul id="questionList"></ul>
+  </aside>
+
+  <main class="editor-panel">
+
+    <div id="emptyState" class="empty">
+      Select a question to view details
+    </div>
+
+    <div id="questionCard" class="question-card hidden">
+      <h2 id="questionTitle"></h2>
+      <p id="questionDescription"></p>
+
+      <h4>Constraints</h4>
+      <ul id="constraintBox"></ul>
+
+      <a id="sourceLink" target="_blank" class="solveBtn">
+        Practice on Original Platform
+      </a>
+
+      <div class="actions">
+        <label>
+          <input type="checkbox" id="doneToggle">
+          Mark as Done
+        </label>
+
+        <button id="solutionBtn" class="aiBtn">Show Solution</button>
+      </div>
+
+      <pre id="solutionBox" class="solution hidden"></pre>
+    </div>
+
+  </main>
+
+</div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
