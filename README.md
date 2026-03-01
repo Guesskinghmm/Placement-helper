@@ -1,157 +1,106 @@
-# Placement Helper – IIITA DSA Hub
+# 💠 Placement Helper – IIITA DSA Hub
 
-Placement Helper is a company-wise DSA interview preparation platform designed to help students prepare for product-based companies through structured and curated questions.
+> **The ultimate full-stack DSA preparation platform designed for campus placements.**
+> *Target Dream Companies: Amazon, Microsoft, Adobe, Cisco, Oracle, Uber, and Zepto.*
 
-It provides rewritten problem summaries, clear constraints, and well-formatted C++ solutions along with direct links to the original problems for hands-on practice.
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![Tech Stack](https://img.shields.io/badge/Stack-Node.js%20%7C%20MySQL%20%7C%20VanillaJS-blueviolet)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
----
+## 📖 About
+Placement Helper is a comprehensive, company-wise DSA interview preparation platform built to help students target product-based tech giants. It transitions students away from random problem-solving into structured, highly targeted practice.
 
-## Project Repository
-
-GitHub Link  
-https://github.com/Guesskinghmm/placement-helper
-
----
-
-## Purpose
-
-This project simplifies placement preparation by offering:
-- A focused roadmap of important DSA questions  
-- Company-specific problem categorization  
-- Clean explanations and optimized C++ solutions  
-- Direct access to practice platforms  
-
-It is built for students targeting Microsoft, Amazon, Oracle, and other product-based companies.
+Originally a static frontend site, it has been completely re-engineered into a **Full-Stack Application** featuring a modern Dark/Neon Glassmorphism UI, a Node.js backend, and a persistent MySQL database to track user progress and streaks.
 
 ---
 
-## Key Features
+## ✨ Key Features
 
-- Company-wise segregation of DSA interview questions  
-- Handpicked and placement-relevant problems  
-- Rewritten problem descriptions (no direct copy-paste)  
-- Clearly defined constraints  
-- Properly formatted C++ reference solutions  
-- Direct links to LeetCode / Codeforces  
-- AI Help button for instant guidance  
-- Clean UI with resizable sidebar  
-- Open-source and contributor-friendly
+- **Company-Targeted Decks:** Handpicked, high-probability questions categorized by companies (Amazon, Microsoft, Zepto, etc.).
+- **Real Interview Constraints:** Practice with actual Time and Space limits to simulate real mock interviews.
+- **Smart Solution Engine:** One-click access to highly optimized C++ solutions, complete with Time & Space complexity analysis.
+- **Hint System:** A guided nudge to help you solve problems without completely revealing the answer.
+- **Progress & Streak Tracking:** Log in to track your daily consistency and mark specific questions as "Done" via the database.
+- **Premium UI:** Dark mode, neon accents, and a bento-grid layout for a distraction-free, aesthetically pleasing experience.
+- **Direct Practice Links:** Instant redirects to LeetCode and Codeforces for hands-on submission.
 
 ---
 
-## Project Structure
+## 🛠️ Tech Stack
 
-placement-helper  
-├── dashboard.html   – Main interface  
-├── main.css         – Styling and layout  
-├── app.js           – Question logic and database  
-└── README.md        – Project documentation  
+- **Frontend:** HTML5, CSS3 (Glassmorphism, Neon Effects), Vanilla JavaScript.
+- **Backend:** Node.js, Express.js.
+- **Database:** MySQL (Relational Data Management).
 
 ---
 
-## Technologies Used
+## 📂 Project Structure
 
-- HTML5  
-- CSS3  
-- Vanilla JavaScript  
-- C++ (for solution references)
+``text
+placement-helper/
+├── frontend/
+│   ├── index.html           # Landing page
+│   ├── dashboard.html       # Main application interface
+│   ├── main.css             # Core application styling
+│   ├── landing.css          # Landing page styling
+│   └── app.js               # Frontend logic & API calls
+├── server.js                # Node.js Express backend server
+├── database_setup.sql       # MySQL schema and initial data injection
+├── package.json             # Node dependencies
+└── README.md                # Project documentation
+⚙️ How to Run Locally
+Follow these steps to set up the full-stack environment on your local machine:
 
-No external frameworks or libraries are used. The project runs directly in any modern browser.
+1. Clone the Repository
+Bash
+git clone [https://github.com/Guesskinghmm/placement-helper.git](https://github.com/Guesskinghmm/placement-helper.git)
+cd placement-helper
+2. Install Dependencies
+Bash
+npm install
+3. Database Setup (MySQL)
+Open your MySQL Command Line or Workbench.
 
----
+Run the provided SQL script to instantly create the database and all tables:
 
-## How to Use
+Open the database_setup.sql file included in this repository.
 
-1. Download or clone the repository.
-2. Open `dashboard.html` in any web browser.
-3. Select a company from the left panel.
-4. Choose a question to view:
-   - Problem summary  
-   - Constraints  
-   - Practice link  
-   - C++ solution  
-5. Use:
-   - "Show Solution" to reveal code  
-   - "Get AI Help" for guided assistance
+Copy all the contents.
 
----
+Paste and execute it in your MySQL interface.
+(This will automatically create the placement_db database, tables for users/companies/questions, and insert all the initial practice data).
 
-## Adding New Questions
+4. Configure Backend Credentials
+Open server.js and update your MySQL connection details (username and password) to match your local setup:
 
-All questions are stored inside `app.js`.
+JavaScript
+const db = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',             // <-- Update if different
+    password: 'YOUR_PASSWORD', // <-- Update this
+    database: 'placement_db' 
+});
+5. Launch the Application
+Start the backend server:
 
-To add a new question, follow this format:
+Bash
+node server.js
+You should see a message confirming the server is running and connected to MySQL.
 
-{
-  title: "Question Title",
-  description: "Brief explanation in your own words.",
-  constraints: [
-    "Constraint 1",
-    "Constraint 2"
-  ],
-  source: "https://leetcode.com/...",
-  solution: `Well-formatted C++ solution`
-}
+Open frontend/index.html in your web browser to view the landing page and start practicing!
 
-To add a new company:
+🤝 Contribution
+This project is open for contributions. You can help by:
 
-NewCompany: [
-  { question object },
-  { question object }
-]
+Adding new companies and their top questions.
 
-Save the file and refresh the page.
+Enhancing C++ solutions or adding Python/Java alternatives.
 
----
+Improving the UI/UX or adding new dashboard analytics.
 
-## Contribution
+Fork the repository, make your changes, and submit a pull request!
 
-This project is open for contributions.
+👤 Author
+Aditya Tripathi Indian Institute of Information Technology, Allahabad (IIITA) GitHub: Guesskinghmm
 
-You can help by:
-- Adding more companies  
-- Including new important questions  
-- Improving UI/UX  
-- Enhancing explanations and solutions  
-
-Fork the repository and submit a pull request.
-
----
-
-## Ideal For
-
-- Placement Preparation  
-- DSA Revision  
-- Internship Portfolios  
-- Competitive Programming Practice  
-- Open Source Contribution
-
----
-
-## Future Enhancements
-
-- Difficulty filters  
-- Search functionality  
-- Progress tracking  
-- Tag-based categorization  
-- Solved status system
-
----
-
-## Disclaimer
-
-Problem explanations are rewritten for educational purposes.  
-Original problems remain the property of their respective platforms such as LeetCode and Codeforces.  
-This project only provides references and direct links for legitimate practice.
-
----
-
-## Author
-
-Aditya Tripathi  
-IIIT Allahabad  
-GitHub: https://github.com/Guesskinghmm  
-
----
-
-If you find this project useful, consider starring the repository.
+If you find this project useful for your placement prep, consider giving the repository a ⭐!
