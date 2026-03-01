@@ -48,6 +48,7 @@ placement-helper/
 ├── database_setup.sql       # MySQL schema and initial data injection
 ├── package.json             # Node dependencies
 └── README.md                # Project documentation
+
 ```
 ---
 
@@ -56,7 +57,7 @@ Follow these steps to set up the full-stack environment on your local machine:
 
 1. Clone the Repository
 Bash
-git clone [https://github.com/Guesskinghmm/placement-helper.git](https://github.com/Guesskinghmm/placement-helper.git)
+git clone https://github.com/Guesskinghmm/placement-helper.git
 cd placement-helper
 2. Install Dependencies
 Bash
@@ -71,7 +72,6 @@ Open the database_setup.sql file included in this repository.
 Copy all the contents.
 
 Paste and execute it in your MySQL interface.
-(This will automatically create the placement_db database, tables for users/companies/questions, and insert all the initial practice data).
 
 4. Configure Backend Credentials
 Open server.js and update your MySQL connection details (username and password) to match your local setup:
@@ -107,4 +107,3 @@ Fork the repository, make your changes, and submit a pull request!
 Aditya Tripathi Indian Institute of Information Technology, Allahabad (IIITA) GitHub: @Guesskinghmm
 
 If you find this project useful for your placement prep, consider giving the repository a ⭐!
-
