@@ -36,7 +36,7 @@ Originally a static frontend site, it has been completely re-engineered into a *
 
 ## 📂 Project Structure
 
-``text
+```text
 placement-helper/
 ├── frontend/
 │   ├── index.html           # Landing page
@@ -48,6 +48,8 @@ placement-helper/
 ├── database_setup.sql       # MySQL schema and initial data injection
 ├── package.json             # Node dependencies
 └── README.md                # Project documentation
+
+---
 ⚙️ How to Run Locally
 Follow these steps to set up the full-stack environment on your local machine:
 
@@ -101,6 +103,6 @@ Improving the UI/UX or adding new dashboard analytics.
 Fork the repository, make your changes, and submit a pull request!
 
 👤 Author
-Aditya Tripathi Indian Institute of Information Technology, Allahabad (IIITA) GitHub: Guesskinghmm
+Aditya Tripathi Indian Institute of Information Technology, Allahabad (IIITA) GitHub: @Guesskinghmm
 
 If you find this project useful for your placement prep, consider giving the repository a ⭐!
