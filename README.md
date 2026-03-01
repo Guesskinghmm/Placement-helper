@@ -50,47 +50,51 @@ placement-helper/
 └── README.md                # Project documentation
 
 ```
----
-
 ⚙️ How to Run Locally
 Follow these steps to set up the full-stack environment on your local machine:
 
 1. Clone the Repository
-Bash
+```Bash
 git clone https://github.com/Guesskinghmm/placement-helper.git
 cd placement-helper
+```
 2. Install Dependencies
-Bash
+```Bash
 npm install
+```
 3. Database Setup (MySQL)
-Open your MySQL Command Line or Workbench.
+ 1.Open your MySQL Command Line or Workbench.
 
-Run the provided SQL script to instantly create the database and all tables:
+ 2.Run the provided SQL script to instantly create the database and all tables:
 
-Open the database_setup.sql file included in this repository.
+   Open the database_setup.sql file included in this repository.
 
-Copy all the contents.
+   Copy all the contents.
 
-Paste and execute it in your MySQL interface.
+   Paste and execute it in your MySQL interface.
 
 4. Configure Backend Credentials
 Open server.js and update your MySQL connection details (username and password) to match your local setup:
 
-JavaScript
+```JavaScript
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',             // <-- Update if different
     password: 'YOUR_PASSWORD', // <-- Update this
     database: 'placement_db' 
 });
+```
 5. Launch the Application
 Start the backend server:
 
-Bash
+```Bash
 node server.js
+```
 You should see a message confirming the server is running and connected to MySQL.
 
 Open frontend/index.html in your web browser to view the landing page and start practicing!
+
+---
 
 🤝 Contribution
 This project is open for contributions. You can help by:
@@ -103,7 +107,12 @@ Improving the UI/UX or adding new dashboard analytics.
 
 Fork the repository, make your changes, and submit a pull request!
 
+---
+
 👤 Author
 Aditya Tripathi Indian Institute of Information Technology, Allahabad (IIITA) GitHub: @Guesskinghmm
 
+---
+
 If you find this project useful for your placement prep, consider giving the repository a ⭐!
+
